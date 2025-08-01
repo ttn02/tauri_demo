@@ -20,11 +20,11 @@ export default function Test() {
       }
     };
 
-    if (typeof window !== "undefined" && window.__TAURI__?.invoke) {
-      getPlatform();
-    } else {
-      console.warn("当前不在 Tauri 环境中");
-    }
+    // if (typeof window !== "undefined" && window.__TAURI__?.invoke) {
+    //   getPlatform();
+    // } else {
+    //   console.warn("当前不在 Tauri 环境中");
+    // }
 
     const getStore = async () => {
       const store = await load('store.json', { autoSave: false });
