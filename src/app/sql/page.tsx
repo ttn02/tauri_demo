@@ -110,6 +110,7 @@ const [data, setData] = useState<{ id: number; name: string }[]>([]);
                   <Button variant="outline">修改</Button>
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-[425px]">
+                  {/* preventDefault 阻止表单默认提交行为 */}
                   <form
                     onSubmit={(e) => {
                       e.preventDefault();

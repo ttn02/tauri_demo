@@ -1,7 +1,5 @@
 'use client';
 import { Button } from "@/components/ui/button";
-import { scan, Format } from '@tauri-apps/plugin-barcode-scanner';
-import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 export default function Home() {
